@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "clean": "rm -rf public/dest/",
+    "dev:build": "rollup -c rollup.config.js --watch",
+    "dev:serve": "cd public/ && npx @ginpei/http",
+    "start": "concurrently 'npm run dev:build' 'npm run dev:serve'"
+  },
+  "devDependencies": {
+    "@ginpei/http": "^1.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "concurrently": "^7.2.0",
+    "rollup": "^2.74.1",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "svelte-preprocess": "^4.10.6"
+  }
+}
