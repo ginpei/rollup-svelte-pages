@@ -8,11 +8,11 @@ const pages = ["foo", "bar"];
 const plugins = [svelte({ preprocess: autoPreprocess() }), resolve(), css()];
 
 export default pages.map(
-  (key) =>
+  (page) =>
     /** @type {import('rollup').RollupOptions} */ ({
-      input: `src/${key}/index.js`,
+      input: `src/${page}/index.js`,
       output: {
-        dir: `public/dest/${key}`,
+        dir: `public/dest/${page}`,
       },
       plugins,
     })
