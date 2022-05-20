@@ -2,6 +2,28 @@
 
 Issue: if you have an array as rollup.js config, and when you modify component style, output CSS files are not updated.
 
+```js
+import resolve from "@rollup/plugin-node-resolve";
+import css from "rollup-plugin-css-only";
+import svelte from "rollup-plugin-svelte";
+import autoPreprocess from "svelte-preprocess";
+
+const pages = ["foo", "bar"];
+
+const plugins = [svelte({ preprocess: autoPreprocess() }), resolve(), css()];
+
+export default pages.map(
+  (page) =>
+    /** @type {import('rollup').RollupOptions} */ ({
+      input: `src/${page}/index.js`,
+      output: {
+        dir: `public/dest/${page}`,
+      },
+      plugins,
+    })
+);
+```
+
 ## How to see
 
 Preparation:
