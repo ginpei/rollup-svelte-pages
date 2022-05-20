@@ -1,21 +1,8 @@
-<div class="outer">
-  <div class="inner">
-    <a href="/" class="homeLink">Home</a>
-  </div>
-</div>
+<div class="outer">Header</div>
 
 <style>
   .outer {
     background: #000;
-    padding: 10px;
-  }
-
-  .inner {
-    background: #fff;
-    padding: 10px;
-  }
-
-  a.homeLink {
-    color: blue;
+    color: white;
   }
 </style>
