@@ -5,7 +5,7 @@ import css from "rollup-plugin-css-only";
 
 const pages = ["foo", "bar"];
 
-const plugins = [svelte({ preprocess: autoPreprocess() }), css(), resolve()];
+const plugins = [svelte({ preprocess: autoPreprocess() }), resolve(), css()];
 
 export default pages.map(
   (key) =>
