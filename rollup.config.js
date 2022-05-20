@@ -1,7 +1,7 @@
-import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
-import autoPreprocess from "svelte-preprocess";
 import css from "rollup-plugin-css-only";
+import svelte from "rollup-plugin-svelte";
+import autoPreprocess from "svelte-preprocess";
 
 const pages = ["foo", "bar"];
 
