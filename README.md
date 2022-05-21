@@ -38,7 +38,7 @@ Try:
 4. Make sure there are same headers in both pages
 5. Modify header style at `Header.svelte` (e.g. change `background-color` from `#000` to `#999`)
 6. The header on `/foo.html` changed
-7. The header on `/bar.html` did NOT change
+7. The header on `/bar.html` looses its whole style
    - Its output file `bundle.css` was actually not output at this time
 
 ## How to fix
