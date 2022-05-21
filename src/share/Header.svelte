@@ -4,5 +4,6 @@
   .outer {
     background: #000;
     color: white;
+    font-size: 40px;
   }
 </style>
